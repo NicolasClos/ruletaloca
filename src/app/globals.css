@@ -1,3 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body{
+  overflow-x: hidden;
+  font-family: 'Open Sans', sans-serif;
+}
+#img-ruleta{
+  position: relative;
+  z-index: 1;
+}
+.img-ruleta{
+  /*animation-name: infinite-spinning;
+  animation-duration: 4s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;*/
+  /*animation-iteration-count: infinite;*/
+  transition: all 4s ease;
+  overflow-x: hidden
+}
+
+.btn-warning.btn-orange, .btn-warning.btn-orange:focus, .btn-warning.btn-orange:hover{
+  color: #fff;
+  background-color: #ff2244;
+  border-color: #ff2244;
+  position: relative;
+  z-index: 2;
+}
+
+.ruleta-puntos{
+  color:#fff;
+  text-shadow: 1px 1px 1px #ff2244;
+  text-transform: uppercase;
+}
+
+@keyframes infinite-spinning {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    /*transform: rotate(360deg);*/
+    transform: rotate(1100deg);
+  }
+}
+
+.ruleta img{
+  width: 100%;
+  height: 100%;
+}
+
+.boton-girar{
+  position: absolute;
+  background-color: red;
+  border: none;
+  outline: none;
+  height: 7vw;
+  width: 7vw;
+  border-radius: 50%;
+  top: 0;
+  z-index: 100000;
+  cursor: pointer;
+}
+
+.ruleta-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
 .ruleta-container {
   display: flex;
   flex-direction: column;
@@ -12,50 +85,12 @@
 }
 
 .ruleta {
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
+  width: 50vw;
+  height: 50vw;
   position: relative;
   overflow: hidden;
   transition: transform 5s ease-out;
   transform: rotate(0deg);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  border: 4px solid #000;
-}
-
-.sector {
-  position: absolute;
-  width: 150%;
-  height: 150%;
-  top: -25%;
-  left: -25%;
-  clip-path: polygon(50% 50%, 100% 0, 100% 100%);
-  transform-origin: 50% 50%;
-}
-
-.sector-1 {
-  background-color: #ff4d4d;
-  transform: rotate(0deg);
-}
-
-.sector-2 {
-  background-color: #4dff4d;
-  transform: rotate(72deg);
-}
-
-.sector-3 {
-  background-color: #4d4dff;
-  transform: rotate(144deg);
-}
-
-.sector-4 {
-  background-color: #ffff4d;
-  transform: rotate(216deg);
-}
-
-.sector-5 {
-  background-color: #4dffff;
-  transform: rotate(288deg);
 }
 
 .texto-categoria {
@@ -71,19 +106,15 @@
   transition: transform 5s ease-out;
 }
 
-.resaltado {
-  border: 5px solid black;
-}
-
 .boton-girar {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 100px;
-  height: 100px;
-  background-color: white;
+  width: 10vw;
+  height: 10vw;
   border-radius: 50%;
+  background-color: transparent !important;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: center;
@@ -95,11 +126,4 @@
 .boton-girar span {
   font-size: 18px;
   font-weight: bold;
-}
-
-.resultado {
-  margin-top: 20px;
-  font-size: 18px;
-  font-weight: bold;
-  text-align: center;
 }
