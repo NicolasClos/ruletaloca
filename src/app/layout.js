@@ -2,8 +2,8 @@ import "./globals.css";
 
 export const metadata = {
   title: 'RuletaLoca - Centro Cultural Armoza',
-  description: 'Organiza torneos de ajedrez de manera fácil y rápida. Sigue los resultados de tus torneos. ¡Empieza hoy y lleva tus torneos al siguiente nivel!',
-  keywords: 'Gira gira gira y la suerte es loca...',
+  description: 'Gira gira gira y la suerte es loca...',
+  keywords: 'Ruleta, ruleta loca, ruleta armoza, armoza wines, armoza ruleta, ruleta loca armoza, preguntados ruleta, ruleta preguntados armoza',
   robots: 'index, follow',
   author: 'Nicolás Clos',
   icons: {
