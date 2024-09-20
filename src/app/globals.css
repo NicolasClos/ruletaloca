@@ -91,6 +91,13 @@ body{
   overflow: hidden;
   transition: transform 5s ease-out;
   transform: rotate(0deg);
+  border-radius: 50%;  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+}
+
+.img-ruleta{
+  background-color: red;
+
 }
 
 .texto-categoria {
